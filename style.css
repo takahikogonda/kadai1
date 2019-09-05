@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+main {
+	width: 960px;
+    margin: 50px auto;
+}
+.stepbox {
+	width: 300px;
+	padding: 10px;
+/*	margin:  30px;*/
+	float: left;
+	position: relative;
+}
+.step{
+	margin:0 30px;
+}
+.stepbox-image {
+	width: 280px;
+	height: 150px;
+}
+
+.stepbox-num {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: orange;
+	color: white;
+}
+@media screen and (max-width: 768px) {
+ main {
+ 	width: 90%;
+ 	margin: 50px auto;
+ }
+ .stepbox {
+ 	width: 90%;
+ 	float: none;
+ 	}
+ .step {
+ 	margin: 20px;
+ }
+ .stepbox-image{
+ 	width: 90%;
+ }}
